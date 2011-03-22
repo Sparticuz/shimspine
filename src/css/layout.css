@@ -2046,7 +2046,8 @@ text-decoration:none
 #main ul.pagenav {
 	list-style-type:none;
 	padding:0;
-	overflow:hidden
+	overflow:hidden;
+	display: none;
 }
 ul.pagenav li
 {
