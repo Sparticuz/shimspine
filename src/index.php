@@ -273,6 +273,7 @@ $templateparams	= $app->getTemplate(true)->params;
 			<?php endif; ?>
 
 					<jdoc:include type="modules" name="position-14" />
+					<p><address><a href="http://maps.google.com/maps/place?cid=17500052136802036311&ie=UTF8&z=14">Westchase: 12780 Race Track Rd # 200, Tampa, FL 33626</a></address><address><a href="http://maps.google.com/maps/place?cid=16359417441501259661&ie=UTF8&z=14">Palm Harbor: 3890 Tampa Rd # 202, Palm Harbor, FL 34684</a></address></p>
 					<!--<p><?php echo JText::_('TPL_BEEZ5_POWERED_BY');?> <a href="http://www.joomla.org/">Joomla!&#174;</a></p>-->
 
 			<?php if (!$templateparams->get('html5', 0)): ?>
