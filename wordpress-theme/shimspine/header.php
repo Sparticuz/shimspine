@@ -30,15 +30,19 @@
 	 */
 	global $page, $paged;
 
-	wp_title( '|', true, 'right' );
+	if (is_front_page() || is_home()) {
+		echo "South Florida Sports Medicine & Orthopaedics | Tampa, Palm Harbor & Westchase";
+	} else {
+		wp_title( '', true, 'right' );
+	}
 
 	// Add the blog name.
 	//bloginfo( 'name' );
 
 	// Add the blog description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
+	//$site_description = get_bloginfo( 'description', 'display' );
 	//if ( $site_description && ( is_home() || is_front_page() ) )
-	echo $site_description;
+	//echo $site_description;
 
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 )
